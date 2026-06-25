@@ -3,10 +3,10 @@ import { test, expect } from '../src/fixtures/pagefixtures';
 
 test.beforeEach(async ({ loginPage }) => {
     await loginPage.goToLoginPage();
-    await loginPage.doLogin('pwtestbatch@open.com', 'pw123');
+    await loginPage.doLogin(process.env.APPUSERNAME!, process.env.APPPASSWORD!);
 });
 
-test('home page title test', async ({ homePage }) => {
+test('home page title test @manju', async ({ homePage }) => {
     const pageTitle = await homePage.getPageTitle();
     console.log('home page title', pageTitle);
     expect(pageTitle).toBe('My Account');
