@@ -34,7 +34,7 @@ test('POST - create a user', async ({ apiHelper }) => {
     //get the user:
     let response = await apiHelper.get(`/public/v2/users/${userResponse.id}`, AUTH_HEADER);
     expect(response.status).toBe(200);
-    expect(response.body.name).toBe("Naveen API");
+    expect(response.body.name).toBe("Manju");
 
 });
 

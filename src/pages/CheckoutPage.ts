@@ -56,11 +56,11 @@ export class CheckoutPage extends BasePage {
          let productName=await this.productName.innerText();
          let prodtableCount=await this.prodtable.count();
          let totalPrice=await this.total.innerText()
-         let vatprice=await this.VATprice.innerText();
+        // let vatprice=await this.VATprice.innerText();
          this.map.set("ProductName",productName);
          this.map.set("ProductTablecnt",prodtableCount);
          this.map.set("Total",totalPrice);
-         this.map.set("VATprice",vatprice);
+         //this.map.set("VATprice",vatprice);
          return this.map;
      }
 
