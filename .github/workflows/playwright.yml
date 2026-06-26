@@ -17,7 +17,7 @@ on:
         options:
           - QA
           - stage
-          - dev
+          - Dev
 
 jobs:
   test:
