@@ -10,14 +10,14 @@ let userId: number;
 test.describe.serial('running e2e go rest crud api tests', () => {
 
     //GET test:
-    test('GET API -- get all users', async ({ apiHelper }) => {
+    test('GET API -- get all users @manju', async ({ apiHelper }) => {
         let response = await apiHelper.get('/public/v2/users', AUTH_HEADER);
         expect(response.status).toBe(200);
         expect(response.body.length).toBeGreaterThan(0);
     });
 
 
-    test('POST API -- create a user', async ({ apiHelper }) => {
+    test('POST API -- create a user @manju', async ({ apiHelper }) => {
         let userData = {
             name: 'Naveen API',
             email: `automation_${Date.now()}@open.com`,
