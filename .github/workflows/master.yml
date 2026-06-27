@@ -102,10 +102,10 @@ jobs:
         if: steps.pw-cache-dev.outputs.cache-hit == 'true'
         run: npx playwright install-deps chromium
 
-      - name: Run Sanity Tests on DEV
+      - name: Run Smoke Tests on DEV
         run: |
           echo "========================================="
-          echo "  Running SANITY @smoke on DEV"
+          echo "  Running Smoke @smoke on DEV"
           echo "========================================="
           npx playwright test --project=chromium --grep @smoke
         env:

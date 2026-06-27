@@ -26,7 +26,7 @@ async function createUser(apiHelper: any) {
 
 //Test 1: Create a user test + verify: AAA
 //POST ---> userId --> GET /userId -- verify
-test('POST - create a user @manju', async ({ apiHelper }) => {
+test('POST - create a user @smoke', async ({ apiHelper }) => {
 
     //create a user:
     let userResponse = await createUser(apiHelper);
@@ -41,7 +41,7 @@ test('POST - create a user @manju', async ({ apiHelper }) => {
 
 //Test 2: Update a user test + verify: AAA
 //POST ---> userId --> PUT --> GET /userId -- verify
-test('PUT - update a user', async ({ apiHelper }) => {
+test('PUT - update a user @smoke', async ({ apiHelper }) => {
     //create a user: POST
     let userResponse = await createUser(apiHelper);
     let userUpdatedData = {
