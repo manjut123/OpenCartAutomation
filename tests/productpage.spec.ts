@@ -44,7 +44,7 @@ test('add product to cart @manju',async({homePage, searchResultsPage, productInf
     await searchResultsPage.selectProduct('MacBook Pro');
     let actualProductInfoMap = await productInfoPage.getProductInfo();
     let message=await productInfoPage.addProductToCart();
-    //Success: You have added MacBook Pro to your shopping cart!
+    
     let productname=await productInfoPage.getProductHeader();
    let expectedMessage=`Success: You have added ${productname} to your shopping cart!`
     expect(message.trim()).toContain(expectedMessage);
