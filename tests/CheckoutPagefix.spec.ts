@@ -6,7 +6,7 @@ test.beforeEach(async ({ loginPage }) => {
     await loginPage.doLogin(process.env.APPUSERNAME!, process.env.APPPASSWORD!);
 });
 
-test('test checkout flow',async({checkoutPage,homePage,productInfoPage,searchResultsPage})=>{
+test('test checkout flow @smoke',async({checkoutPage,homePage,productInfoPage,searchResultsPage})=>{
 
     await homePage.doSearch('macbook');
     await searchResultsPage.selectProduct('MacBook Pro');
