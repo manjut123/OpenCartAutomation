@@ -1,0 +1,7 @@
+{
+  id: 8525790,
+  name: 'Manju',
+  email: 'software1782587687315@expert.com',
+  gender: 'female',
+  status: 'active'
+}

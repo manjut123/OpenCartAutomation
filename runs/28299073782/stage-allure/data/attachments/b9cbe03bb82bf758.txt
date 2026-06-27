@@ -1,0 +1,5 @@
+user creds: manju33@gmail.com
+search key: macbook
+Success: You have added MacBook Pro to your shopping cart!
+×   MacBook Pro
+Shopping Cart  (0.00kg)
