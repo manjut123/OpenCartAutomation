@@ -1,0 +1,2 @@
+user creds: manju33@gmail.com
+home page headers:  [ 'My Account', 'My Orders', 'My Affiliate Account', 'Newsletter' ]
