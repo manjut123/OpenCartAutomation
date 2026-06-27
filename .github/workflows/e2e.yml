@@ -194,7 +194,7 @@ jobs:
           echo "========================================="
           npx playwright test --project=chromium
         env:
-          ENV: qa
+          ENV: QA
           BASE_URL: ${{ secrets.BASE_URL }}
           APPUSERNAME: ${{ secrets.APPUSERNAME }}
           APPPASSWORD: ${{ secrets.APPPASSWORD }}
