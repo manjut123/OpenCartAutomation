@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1653","POST - create a user @smoke","chromium","2026-06-27","passed","2026-06-27","","api/user.api.indv.spec.ts","",""
+"","7493","test checkout flow @smoke","chromium","2026-06-27","passed","2026-06-27","","CheckoutPagefix.spec.ts","",""
+"","2958","logout link exist test @smoke","chromium","2026-06-27","passed","2026-06-27","","Homepagefix.spec.ts","",""
+"","2865","home page headers exist test @smoke","chromium","2026-06-27","passed","2026-06-27","","Homepagefix.spec.ts","",""
+"","2059","PUT - update a user @smoke","chromium","2026-06-27","passed","2026-06-27","","api/user.api.indv.spec.ts","",""
+"","2847","home page title test @smoke","chromium","2026-06-27","passed","2026-06-27","","Homepagefix.spec.ts","",""

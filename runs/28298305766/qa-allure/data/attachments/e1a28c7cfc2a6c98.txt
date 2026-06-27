@@ -1,0 +1,3 @@
+user creds: manju33@gmail.com
+search key: macbook
+total images:  4
