@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","403","PUT API -- Update a user @sanity","chromium","2026-06-29","passed","2026-06-29","running e2e go rest crud api tests","api/user.api.sep.spec.ts","",""
+"","375","POST API -- create a user @sanity","chromium","2026-06-29","passed","2026-06-29","running e2e go rest crud api tests","api/user.api.sep.spec.ts","",""
+"","660","GET API -- get all users @sanity","chromium","2026-06-29","passed","2026-06-29","running e2e go rest crud api tests","api/user.api.sep.spec.ts","",""
+"","319","DELETE API -- Delete a user @sanity","chromium","2026-06-29","passed","2026-06-29","running e2e go rest crud api tests","api/user.api.sep.spec.ts","",""
