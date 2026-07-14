@@ -73,7 +73,7 @@ pipeline {
                     bat 'if exist allure-results rmdir /s /q allure-results'
                     bat 'if exist reports rmdir /s /q reports'
                     withCredentials([
-                        usernamePassword(credentialsId: 'dev-credentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD'),
+                        usernamePassword(credentialsId: 'dev-credentials', usernameVariable: 'APPUSERNAME', passwordVariable: 'APPPASSWORD'),
                         string(credentialsId: 'api-token', variable: 'API_TOKEN'),
                         string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
                         string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
@@ -83,8 +83,8 @@ pipeline {
                         bat """
                             set ENV=dev
                             set BASE_URL=%BASE_URL%
-                            set USERNAME=%USERNAME%
-                            set PASSWORD=%PASSWORD%
+                            set APPUSERNAME=%APPUSERNAME%
+                            set APPPASSWORD=%APPPASSWORD%
                             set API_BASE_URL=%API_BASE_URL%
                             set API_TOKEN=%API_TOKEN%
                             set OAUTH_CLIENT_ID=%OAUTH_CLIENT_ID%
