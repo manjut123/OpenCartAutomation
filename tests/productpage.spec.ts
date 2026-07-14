@@ -8,15 +8,15 @@ test.beforeEach(async ({ loginPage }) => {
 });
 
 
-test('comp logo exists on product page @manju', async ({ basePage }) => {
+test('comp logo exists on product page @regression', async ({ basePage }) => {
     expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test('footers exist on product page @manju', async ({ basePage }) => {
+test('footers exist on product page @regression', async ({ basePage }) => {
     expect(await basePage.getPageFootersCount()).toBe(16);
 });
 
-test('verify product images count @manju', async ({ homePage, searchResultsPage, productInfoPage }) => {
+test('verify product images count @regression', async ({ homePage, searchResultsPage, productInfoPage }) => {
     await homePage.doSearch('macbook');
     await searchResultsPage.selectProduct('MacBook Pro');
     let imgCount = await productInfoPage.getProductImagesCount();

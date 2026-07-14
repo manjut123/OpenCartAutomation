@@ -135,7 +135,7 @@ pipeline {
                             set OAUTH_CLIENT_ID=%OAUTH_CLIENT_ID%
                             set OAUTH_CLIENT_SECRET=%OAUTH_CLIENT_SECRET%
                             set GRANT_TYPE=client_credentials
-                            npx playwright test --project=chromium --grep @manju1
+                            npx playwright test --project=chromium --grep @regression
                         """
                     }
                 }
