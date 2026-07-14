@@ -23,7 +23,7 @@ async function createUser(apiHelper:any)
 }
 
 
-test('PUT - update new user',async({apiHelper})=>{
+test('PUT - update new user @sanityi',async({apiHelper})=>{
     let response=await createUser(apiHelper);
     let featchId=response.id; 
      let userData = {
@@ -39,7 +39,7 @@ test('PUT - update new user',async({apiHelper})=>{
     expect(getResponse.body.status).toBe('inactive');
 })
 
-test('DELETE - delete new user',async({apiHelper})=>{
+test('DELETE - delete new user @sanityi',async({apiHelper})=>{
     let response=await createUser(apiHelper);
     let featchId=response.id; 
      
@@ -51,7 +51,7 @@ test('DELETE - delete new user',async({apiHelper})=>{
    
 })
 
-test('Verify new user using Get api',async({apiHelper})=>{
+test('Verify new user using Get api @sanityi',async({apiHelper})=>{
     let response=await createUser(apiHelper);
     let featchId=response.id; 
    

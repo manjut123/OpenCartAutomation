@@ -90,7 +90,7 @@ pipeline {
                             set OAUTH_CLIENT_ID=%OAUTH_CLIENT_ID%
                             set OAUTH_CLIENT_SECRET=%OAUTH_CLIENT_SECRET%
                             set GRANT_TYPE=client_credentials
-                            npx playwright test --project=chromium --grep @smoke
+                            npx playwright test --project=chromium --grep @sanityi
                         """
                     }
                 }
@@ -135,7 +135,7 @@ pipeline {
                             set OAUTH_CLIENT_ID=%OAUTH_CLIENT_ID%
                             set OAUTH_CLIENT_SECRET=%OAUTH_CLIENT_SECRET%
                             set GRANT_TYPE=client_credentials
-                            npx playwright test --project=chromium
+                            npx playwright test --project=chromium --grep @manju1
                         """
                     }
                 }
@@ -180,7 +180,7 @@ pipeline {
                             set OAUTH_CLIENT_ID=%OAUTH_CLIENT_ID%
                             set OAUTH_CLIENT_SECRET=%OAUTH_CLIENT_SECRET%
                             set GRANT_TYPE=client_credentials
-                            npx playwright test --project=chromium --grep @smoke
+                            npx playwright test --project=chromium --grep @sanityi
                         """
                     }
                 }
@@ -231,7 +231,7 @@ pipeline {
                             set OAUTH_CLIENT_ID=%OAUTH_CLIENT_ID%
                             set OAUTH_CLIENT_SECRET=%OAUTH_CLIENT_SECRET%
                             set GRANT_TYPE=client_credentials
-                            npx playwright test --project=chromium --grep @smoke
+                            npx playwright test --project=chromium --grep @sanityi
                         """
                     }
                 }
@@ -258,7 +258,7 @@ pipeline {
 
                 slackSend(channel: env.SLACK_CHANNEL, color: statusColor, message: "🎭 *Playwright CI/CD Pipeline Report*\n\n*Overall: ${statusEmoji} ${buildStatus}*\n*Environment:* `${params.ENVIRONMENT}`\n*Build:* #${env.BUILD_NUMBER}\n*Duration:* ${currentBuild.durationString.replace(' and counting', '')}\n\n📊 <${env.BUILD_URL}|View Reports>\n🔍 <${env.BUILD_URL}console|Console Logs>")
 
-                emailext(to: 'naveenanimation20@gmail.com,training@naveenautomationlabs.com', subject: "🎭 CI/CD — ${statusEmoji} ${buildStatus} — Build #${env.BUILD_NUMBER}", mimeType: 'text/html', body: "<html><body style='font-family:Arial;padding:20px;background:#f5f5f5'><div style='max-width:700px;margin:0 auto;background:white;border-radius:12px;overflow:hidden'><div style='background:linear-gradient(135deg,#1a1a2e,#16213e);color:white;padding:30px;text-align:center'><h1 style='margin:0'>🎭 Playwright CI/CD Dashboard</h1><span style='display:inline-block;padding:6px 16px;border-radius:20px;font-weight:bold;margin-top:12px;background:${buildStatus == 'SUCCESS' ? '#28a745' : '#dc3545'};color:white'>${statusEmoji} ${buildStatus}</span></div><div style='padding:24px'><table style='width:100%;border-collapse:collapse'><tr><td style='padding:10px;color:#666'>Environment</td><td style='padding:10px;font-weight:bold'>${params.ENVIRONMENT}</td></tr><tr><td style='padding:10px;color:#666'>Build</td><td style='padding:10px;font-weight:bold'>#${env.BUILD_NUMBER}</td></tr><tr><td style='padding:10px;color:#666'>Duration</td><td style='padding:10px;font-weight:bold'>${currentBuild.durationString.replace(' and counting', '')}</td></tr></table></div><div style='background:#f8f9fa;padding:20px 24px'><a href='${env.BUILD_URL}' style='display:inline-block;padding:10px 20px;background:#1a1a2e;color:white;text-decoration:none;border-radius:6px;margin:4px'>📁 Open Jenkins Build</a><a href='${env.BUILD_URL}console' style='display:inline-block;padding:10px 20px;background:#6c757d;color:white;text-decoration:none;border-radius:6px;margin:4px'>🔍 Console Logs</a></div></div></body></html>")
+                emailext(to: 'tanwarmanjushree@gmail.com', subject: "🎭 CI/CD — ${statusEmoji} ${buildStatus} — Build #${env.BUILD_NUMBER}", mimeType: 'text/html', body: "<html><body style='font-family:Arial;padding:20px;background:#f5f5f5'><div style='max-width:700px;margin:0 auto;background:white;border-radius:12px;overflow:hidden'><div style='background:linear-gradient(135deg,#1a1a2e,#16213e);color:white;padding:30px;text-align:center'><h1 style='margin:0'>🎭 Playwright CI/CD Dashboard</h1><span style='display:inline-block;padding:6px 16px;border-radius:20px;font-weight:bold;margin-top:12px;background:${buildStatus == 'SUCCESS' ? '#28a745' : '#dc3545'};color:white'>${statusEmoji} ${buildStatus}</span></div><div style='padding:24px'><table style='width:100%;border-collapse:collapse'><tr><td style='padding:10px;color:#666'>Environment</td><td style='padding:10px;font-weight:bold'>${params.ENVIRONMENT}</td></tr><tr><td style='padding:10px;color:#666'>Build</td><td style='padding:10px;font-weight:bold'>#${env.BUILD_NUMBER}</td></tr><tr><td style='padding:10px;color:#666'>Duration</td><td style='padding:10px;font-weight:bold'>${currentBuild.durationString.replace(' and counting', '')}</td></tr></table></div><div style='background:#f8f9fa;padding:20px 24px'><a href='${env.BUILD_URL}' style='display:inline-block;padding:10px 20px;background:#1a1a2e;color:white;text-decoration:none;border-radius:6px;margin:4px'>📁 Open Jenkins Build</a><a href='${env.BUILD_URL}console' style='display:inline-block;padding:10px 20px;background:#6c757d;color:white;text-decoration:none;border-radius:6px;margin:4px'>🔍 Console Logs</a></div></div></body></html>")
             }
         }
         success { echo 'PIPELINE: SUCCESS' }
